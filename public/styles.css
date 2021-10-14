@@ -1,13 +1,16 @@
+/* styling for body */
 body {
   font-size: 120%;
   font-family: Arial;
 }
 
+/* styling for button  */
 button, input {
   font-size: 100%;
   font-family: Arial;
 }
 
+/* styling for table */
 table {
   width: 100%;
 }
@@ -22,26 +25,35 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+/* styling for hav header app */
+.nav {
+  color: white !important;
+}
+
 .error {
   color: red;
 }
 
+/* styling for wrapper */
 .wrapper {
   margin: 0 auto;
   max-width: 825px;
   text-align: center;
 }
 
+/* styling for total displayed */
 .total {
   font-size: 150%;
   text-decoration: underline;
 }
 
+/*  styling for form  */
 .form {
   margin-top: 25px;
   width: 100%;
 }
 
+/* styling for funds added/subtracted (transactions) */
 .transactions {
   text-align: left;
   max-height: 300px;
