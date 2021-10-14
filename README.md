@@ -8,7 +8,6 @@ Progressive Web App (PWA) - add expenses and deposits to a user budget with or w
  <img src="https://img.shields.io/badge/-mongoDB-purple">
  <img src="https://img.shields.io/badge/-express npm-brown">
  <img src="https://img.shields.io/badge/-mongoose npm-blue">
- <img src="https://img.shields.io/badge/-dotenv npm-grey">
 </p>
 
 
