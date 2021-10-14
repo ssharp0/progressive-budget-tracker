@@ -1,5 +1,5 @@
-# progressive-budget-tracker
-Progressive Web App (PWA) - add expenses and deposits to a user budget with or without a connection
+# Progressive Budget Tracker
+Progressive Web App (PWA) - add expenses and deposits to a user budget with or without a connection.
 
 <p align="center">
  <img src="https://img.shields.io/github/repo-size/ssharp0/progressive-budget-tracker">
@@ -16,7 +16,7 @@ Progressive Web App (PWA) - add expenses and deposits to a user budget with or w
 
 ### [Heroku Deployed Demo Link](https://pwa-budget-tracker-s01.herokuapp.com/)
 
-### [Github Repo](https://github.com/ssharp0/exercise-fitness-tracker)
+### [Github Repo](https://github.com/ssharp0/progressive-budget-tracker)
 
 
 ## Table of Contents
