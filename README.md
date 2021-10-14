@@ -14,7 +14,7 @@ Progressive Web App (PWA) - add expenses and deposits to a user budget with or w
 
 <br>
 
-### [Heroku Deployed Demo Link]()
+### [Heroku Deployed Demo Link](https://pwa-budget-tracker-s01.herokuapp.com/)
 
 ### [Github Repo](https://github.com/ssharp0/exercise-fitness-tracker)
 
