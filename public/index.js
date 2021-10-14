@@ -6,9 +6,11 @@ if ('serviceWorker' in navigator) {
   })
 }
 
+// empty array
 let transactions = [];
 let myChart;
 
+// fetch the api transactions data and populate the total, table and chart
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -22,6 +24,7 @@ fetch("/api/transaction")
     populateChart();
   });
 
+  // populate budget total
 function populateTotal() {
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
@@ -86,6 +89,7 @@ function populateChart() {
   });
 }
 
+// function to send the transaction (to the table list)
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
   let amountEl = document.querySelector("#t-amount");
@@ -152,10 +156,12 @@ function sendTransaction(isAdding) {
   });
 }
 
+// when add button is clicked send transaction
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
 };
 
+// when subtract button is clicked send ransaction
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
