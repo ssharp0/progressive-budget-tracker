@@ -5,27 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#317EFB">
+  <!-- Meta Description -->
+  <meta name="description" content="Budget Tracker App">
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
-
+  <!-- Manifest -->
+  <link rel="manifest" href="./manifest.json">
+  <!-- Bootstrap Style CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./styles.css">
 
   <title>Budget Tracker</title>
 </head>
 <body>
+
+  <!-- Navbar for title only -->
+  <nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1 nav">Budget Tracker</span>
+  </nav>
+
+  <!-- wrapper -->
   <div class="wrapper">
     <div class="total">
       <div class="total">Your total is: $<span id="total">0</span></div>
     </div>
 
+    <!-- form to add or subtract funds -->
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+      <button class="btn btn-success" id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
+      <button class="btn btn-danger" id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
     </div>
 
+    <!-- transactions -->
     <div class="transactions">
       <table>
         <thead>
@@ -38,10 +54,14 @@
       </table>
     </div>
     
+    <hr>
     <canvas id="myChart"></canvas>
   </div>
 
+  <!-- Script Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./db.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
